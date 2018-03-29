@@ -45,7 +45,7 @@ namespace PDFParserLinker
 
         private List<string> BoldAndUnderlinedText { get; }
 
-        private FieldInfo _gsField = typeof(LocationTextExtractionStrategy).GetField("gs",
+        private FieldInfo _gsField = typeof(TextRenderInfo).GetField("gs",
             BindingFlags.GetField | BindingFlags.NonPublic | BindingFlags.Instance);
         private readonly FieldInfo _locationResultField =
             typeof(LocationTextExtractionStrategy).GetField("locationResult",
